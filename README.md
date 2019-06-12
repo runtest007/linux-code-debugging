@@ -4,7 +4,7 @@
 1、在windows系统的电脑上安装visual studio工具；
 
 2、如果visual studio为vs2019之前的版本，则需要额外安装wingdb插件，安装步骤如下：
-	(1)解压wingdb破解版.rar，得到crack_wingdb.bat、setdll.exe、wingdb_patch.dll、WinGDB-5.0.msi四个文件；
+  (1)解压wingdb破解版.rar，得到crack_wingdb.bat、setdll.exe、wingdb_patch.dll、WinGDB-5.0.msi四个文件；
   (2)点击WinGDB-5.0.msi进行安装；
   (3)WinGDB安装完成后进行破解。首先进入C:\Windows\System32目录，以管理员身份打开cmd.exe; 然后通过cd命令进入到wingdb破解版.rar解压后的文件夹目录下，执行crack_wingdb.bat，然后按回车键推出，破解完成。
 

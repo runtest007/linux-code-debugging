@@ -22,6 +22,9 @@
                 writable = yes
                 browseable = yes
                 guest_ok= yes
+        	create mask = 777
+        	directory mask = 777
+
          其中设置的path目录设置成777的权限
   （3）关闭selinux，打开/etc/selinux/config文件，将SELINUX设置为disabled,（SELINUX=disabled）。
   （4）关闭防火墙,chkconfig iptables off。                      

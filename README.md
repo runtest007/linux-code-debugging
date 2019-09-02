@@ -21,7 +21,7 @@
                 public = yes
                 writable = yes
                 browseable = yes
-                guest_ok= yes
+                guest ok= yes
         	create mask = 777
         	directory mask = 777
          其中设置的path目录设置成777的权限

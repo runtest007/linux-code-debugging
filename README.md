@@ -1,5 +1,5 @@
 # debug_linux_code_by_visual_Studio
-本文介绍如何使用visual studio远程调试linux服务器C/C++程序，侧重点是环境搭建。
+一、本文介绍如何使用visual studio远程调试linux服务器C/C++程序，侧重点是环境搭建。
 
 1、在windows系统的电脑上安装visual studio工具；
 
@@ -32,3 +32,8 @@
 5、测试windows是否可以正常访问linux共享的文件夹，并向其中写入和读取文件。从windows系统的应用菜单中打开运行，或者使用windows+R组合见打开，输入\\linux_IP\file path后按回车，看看是否能够进入共享文件夹，然后将window上的文件拖入到该文件夹中，测试是否具有写权限。如果前面步骤操作正确，是没有任何问题的。
 
 6、在window主机上打开我的电脑，右击左侧列表中的网络，然后选择映射网络驱动器，将linux上共享的文件夹在window系统上映射成一个网络驱动器，方便后续对共享目录的操作。到此为止，linux和window服务器实现了文件的共享，这是vs远程调试linux code 的基础保障。
+
+二、由于WinGDB试用期已过，本节将介绍通过vclinux的方式，实现visual studio远程调试linux服务器C/C++程序的功能
+1、首先，需要使用smb服务，实现linux和window的文件共享，smb环境搭建与第一节相同。
+2、解析vclinux.rar，获取genfilters.sh、genvcxproj.sh文件
+3、参照《VS2017开发Linux程序之管理已有的makefile工程.pdf》进行设置即可。
